@@ -13,15 +13,15 @@ int main(void)
 	int numbers;
 
 	for (numbers = 0; numbers < 100; numbers++)
+	{
+		putchar((numbers / 10) + '0');
+		putchar((numbers % 10) + '0');
+		if (numbers != 99)
 		{
-			putchar((numbers / 10) + '0');
-			putchar((numbers % 10) + '0');
-			if (numbers != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			putchar(',');
+			putchar(' ');
 		}
+	}
 	putchar('\n');
 
 	return (0);
